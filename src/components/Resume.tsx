@@ -36,15 +36,15 @@ const Resume: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">youssef@email.com</span>
+                  <span className="text-gray-700 dark:text-gray-300">yousseftaha1902@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-700 dark:text-gray-300">+20 1025 555 555</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">San Francisco, CA</span>
+                  <span className="text-gray-700 dark:text-gray-300">Cairo, Egypt</span>
                 </div>
               </div>
             </div>
@@ -203,62 +203,62 @@ const skillCategories = [
 
 const experiences = [
   {
-    position: "Senior AI Engineer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    duration: "2022 - Present",
-    description: "Leading development of advanced machine learning models for computer vision applications. Architected and deployed scalable ML pipelines processing millions of images daily.",
-    technologies: ["Python", "PyTorch", "AWS", "Docker", "Kubernetes", "MLflow"]
+    position: "AI Engineer & Researcher",
+    company: "Independent Projects",
+    location: "Cairo, Egypt",
+    duration: "2023 - Present",
+    description: "Developing innovative AI solutions across multiple domains including medical image analysis, autonomous systems, and data visualization. Focus on practical applications of machine learning and deep learning technologies.",
+    technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Gradio", "Dash"]
   },
   {
-    position: "Machine Learning Engineer",
-    company: "DataTech Solutions",
-    location: "San Francisco, CA",
-    duration: "2020 - 2022",
-    description: "Developed recommendation systems and NLP models for e-commerce platform. Improved user engagement by 35% through personalized content delivery.",
-    technologies: ["Python", "TensorFlow", "Scikit-learn", "Apache Spark", "MongoDB"]
+    position: "Computer Science Student & AI Enthusiast",
+    company: "Academic Projects",
+    location: "Cairo, Egypt",
+    duration: "2020 - 2023",
+    description: "Completed comprehensive projects in computer vision, machine learning, and AI algorithms. Developed expertise in image processing, neural networks, and data analysis through hands-on implementation.",
+    technologies: ["Python", "Machine Learning", "Computer Vision", "Data Analysis", "Algorithm Design"]
   },
   {
-    position: "AI Research Intern",
-    company: "AI Research Lab",
-    location: "Berkeley, CA",
+    position: "Software Development & AI Learning",
+    company: "Self-Directed Learning",
+    location: "Cairo, Egypt",
     duration: "2019 - 2020",
-    description: "Conducted research on deep reinforcement learning algorithms. Published 2 papers in top-tier conferences and contributed to open-source ML frameworks.",
-    technologies: ["Python", "PyTorch", "OpenAI Gym", "Jupyter", "Git"]
+    description: "Intensive self-study in artificial intelligence, machine learning, and software development. Built foundational knowledge in programming, algorithms, and AI concepts through online courses and practical projects.",
+    technologies: ["Python", "Machine Learning Fundamentals", "Programming", "Algorithm Design"]
   }
 ];
 
 const education = [
   {
-    degree: "Master of Science in Computer Science",
-    school: "Stanford University",
-    location: "Stanford, CA",
-    year: "2019 - 2021",
-    description: "Specialized in Artificial Intelligence and Machine Learning. Thesis on 'Novel Architectures for Few-Shot Learning in Computer Vision'."
+    degree: "Bachelor of Science in Computer Science",
+    school: "Cairo University",
+    location: "Cairo, Egypt",
+    year: "2020 - 2024",
+    description: "Comprehensive study in computer science with focus on artificial intelligence, machine learning, and software engineering. Completed multiple AI projects and research initiatives."
   },
   {
-    degree: "Bachelor of Science in Computer Engineering",
-    school: "UC Berkeley",
-    location: "Berkeley, CA",
-    year: "2015 - 2019",
-    description: "Graduated Magna Cum Laude. Focus on algorithms, data structures, and software engineering principles."
+    degree: "High School Diploma",
+    school: "Local High School",
+    location: "Cairo, Egypt",
+    year: "2017 - 2020",
+    description: "Strong foundation in mathematics and sciences, which provided the analytical thinking skills essential for AI and computer science studies."
   }
 ];
 
 const certifications = [
   {
-    name: "AWS Certified Machine Learning - Specialty",
-    issuer: "Amazon Web Services",
+    name: "Machine Learning Specialization",
+    issuer: "Coursera",
     date: "2023"
   },
   {
-    name: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI (Coursera)",
+    name: "Deep Learning with Python",
+    issuer: "Online Learning Platform",
     date: "2022"
   },
   {
-    name: "TensorFlow Developer Certificate",
-    issuer: "TensorFlow",
+    name: "Computer Vision Fundamentals",
+    issuer: "Self-Study & Projects",
     date: "2021"
   }
 ];

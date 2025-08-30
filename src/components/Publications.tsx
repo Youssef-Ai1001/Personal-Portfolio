@@ -62,48 +62,6 @@ const Publications: React.FC = () => {
       citations: 67,
       status: 'Published'
     },
-    {
-      id: 4,
-      title: "Few-Shot Learning with Meta-Learning for Industrial Quality Control",
-      authors: ["Youssef Taha", "Dr. Robert Kim"],
-      venue: "IEEE Transactions on Industrial Informatics",
-      year: 2023,
-      type: 'Journal',
-      abstract: "This paper addresses the challenge of quality control in manufacturing with limited labeled data. We propose a meta-learning approach that can quickly adapt to new defect types with minimal examples.",
-      keywords: ["Few-Shot Learning", "Meta-Learning", "Quality Control", "Industrial AI"],
-      pdfUrl: "#",
-      externalUrl: "https://ieeexplore.ieee.org/example",
-      citations: 31,
-      status: 'Published'
-    },
-    {
-      id: 5,
-      title: "Explainable AI for Financial Risk Assessment",
-      authors: ["Youssef Taha", "Dr. Maria Gonzalez", "Prof. David Thompson"],
-      venue: "Workshop on Trustworthy ML (NeurIPS)",
-      year: 2023,
-      type: 'Workshop',
-      abstract: "We develop interpretable machine learning models for financial risk assessment that provide clear explanations for their decisions, enabling better regulatory compliance and stakeholder trust.",
-      keywords: ["Explainable AI", "Financial AI", "Risk Assessment", "Interpretability"],
-      pdfUrl: "#",
-      externalUrl: "https://neurips.cc/workshops/example",
-      citations: 18,
-      status: 'Published'
-    },
-    {
-      id: 6,
-      title: "Large Language Models for Code Generation and Debugging",
-      authors: ["Youssef Taha", "Dr. Jennifer Lee"],
-      venue: "arXiv Preprint",
-      year: 2024,
-      type: 'Preprint',
-      abstract: "This work explores the capabilities of large language models in automated code generation and bug detection. We introduce novel prompting strategies and evaluation metrics for code quality assessment.",
-      keywords: ["Large Language Models", "Code Generation", "Software Engineering", "NLP"],
-      pdfUrl: "#",
-      externalUrl: "https://arxiv.org/abs/2024.example2",
-      citations: 12,
-      status: 'Preprint'
-    }
   ];
 
   const types = ['All', ...Array.from(new Set(publications.map(p => p.type)))];
@@ -129,25 +87,25 @@ const Publications: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 text-center">
             <BookOpen className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{publications.length}</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Publications</div>
+            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6+</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
           </div>
           <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-6 text-center">
             <Award className="w-8 h-8 text-indigo-600 dark:text-indigo-400 mx-auto mb-2" />
             <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-              {publications.reduce((sum, pub) => sum + pub.citations, 0)}
+              Active
             </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Total Citations</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400">GitHub Profile</div>
           </div>
           <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-6 text-center">
             <Users className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">15+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Collaborators</div>
+            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">Multiple</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400">Platforms</div>
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 text-center">
             <Calendar className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-green-600 dark:text-green-400">3</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Years Active</div>
+            <div className="text-2xl font-bold text-green-600 dark:text-green-400">2024</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400">Latest Work</div>
           </div>
         </div>
 

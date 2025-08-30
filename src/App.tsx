@@ -36,7 +36,7 @@ function App() {
               <span className="text-2xl font-bold text-blue-400">Youssef</span>
             </div>
             <p className="text-gray-400 mb-6">
-              AI Engineer passionate about building intelligent systems that make a difference.
+              AI Engineer passionate about developing practical AI solutions for real-world challenges.
             </p>
             <div className="border-t border-gray-700 pt-6">
               <p className="text-sm text-gray-500">

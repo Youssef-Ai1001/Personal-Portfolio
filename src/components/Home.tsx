@@ -30,13 +30,13 @@ const Home: React.FC = () => {
 
           {/* Role */}
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
-            AI Engineer & Machine Learning Specialistvvvvv
+            AI Engineer & Machine Learning Specialist
           </h2>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Passionate about building intelligent systems that solve real-world problems. 
-            Specializing in deep learning, computer vision, and natural language processing.
+            Passionate AI Engineer with expertise in machine learning, deep learning, and computer vision. 
+            Experienced in developing innovative solutions for healthcare, autonomous systems, and data analysis.
           </p>
 
           {/* Skills Pills */}

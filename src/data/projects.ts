@@ -12,60 +12,56 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Neural Network Optimizer",
-    description: "Advanced deep learning model optimization framework using PyTorch and TensorFlow. Implements novel architectures for computer vision tasks.",
+    title: "X-ray Analysis using CNN and Gradio Deployment",
+    description: "Deep learning model for medical X-ray image analysis with an interactive web interface built using Gradio for easy deployment and user interaction.",
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "PyTorch", "TensorFlow", "CUDA"],
-    githubUrl: "https://github.com/Youssef-Ai1001/neural-optimizer",
-    liveUrl: "https://neural-optimizer-demo.com",
-    category: "Deep Learning"
+    technologies: ["Python", "CNN", "Gradio", "Deep Learning", "Medical AI"],
+    githubUrl: "https://github.com/Youssef-Ai1001/Xray-Analysis-using-CNN-and-gradio-deployment",
+    category: "Medical AI"
   },
   {
     id: 2,
-    title: "Smart Recommendation System",
-    description: "Machine learning-powered recommendation engine with collaborative filtering and content-based algorithms. Deployed on AWS with real-time predictions.",
+    title: "Data Visualization Project using Dash",
+    description: "Interactive data visualization dashboard built with Plotly Dash, featuring dynamic charts, real-time data updates, and user-friendly interface for data exploration.",
     image: "https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Scikit-learn", "AWS", "Docker", "FastAPI"],
-    githubUrl: "https://github.com/Youssef-Ai1001/recommendation-system",
-    category: "Machine Learning"
+    technologies: ["Python", "Dash", "Plotly", "Data Visualization", "Interactive UI"],
+    githubUrl: "https://github.com/Youssef-Ai1001/Data-visualization-Project-using-Dash",
+    category: "Data Science"
   },
   {
     id: 3,
-    title: "Computer Vision Pipeline",
-    description: "End-to-end computer vision solution for object detection and classification using YOLO and ResNet architectures.",
+    title: "Image Processing GUI Project",
+    description: "Comprehensive image processing application with graphical user interface, implementing various computer vision algorithms and filters for image enhancement and analysis.",
     image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "OpenCV", "YOLO", "ResNet", "Flask"],
-    githubUrl: "https://github.com/Youssef-Ai1001/cv-pipeline",
-    liveUrl: "https://cv-demo.yousseftaha.com",
+    technologies: ["Python", "OpenCV", "GUI", "Image Processing", "Computer Vision"],
+    githubUrl: "https://github.com/Youssef-Ai1001/Image-Processing-GUI-Project",
     category: "Computer Vision"
   },
   {
     id: 4,
-    title: "NLP Text Analyzer",
-    description: "Natural language processing tool for sentiment analysis, entity recognition, and text classification using transformer models.",
+    title: "Speech Emotion Recognition (SER)",
+    description: "Machine learning model for recognizing emotions from speech audio using advanced signal processing techniques and neural networks. Published on Kaggle with detailed analysis.",
     image: "https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Transformers", "spaCy", "Hugging Face", "React"],
-    githubUrl: "https://github.com/Youssef-Ai1001/nlp-analyzer",
-    liveUrl: "https://nlp-analyzer.yousseftaha.com",
-    category: "NLP"
+    technologies: ["Python", "Machine Learning", "Audio Processing", "Neural Networks", "Kaggle"],
+    githubUrl: "https://www.kaggle.com/code/yousseftaha98/speech-emotion-recognition-ser",
+    category: "Audio AI"
   },
   {
     id: 5,
-    title: "AI Chatbot Framework",
-    description: "Intelligent conversational AI system with context awareness and multi-turn dialog capabilities using GPT and custom training.",
+    title: "Autonomous Car Simulation",
+    description: "Advanced simulation environment for autonomous vehicle development, featuring realistic physics, sensor modeling, and AI-driven navigation algorithms.",
     image: "https://images.pexels.com/photos/8386761/pexels-photo-8386761.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "OpenAI API", "Langchain", "MongoDB", "WebSockets"],
-    githubUrl: "https://github.com/Youssef-Ai1001/ai-chatbot",
-    category: "Conversational AI"
+    technologies: ["Python", "Simulation", "Autonomous Systems", "AI Navigation", "Physics Modeling"],
+    liveUrl: "https://drive.google.com/file/d/1psnSKR-Z3EGGfC1BRDkLh7bfLZuurYRA/view?usp=drive_link&usp=embed_facebook",
+    category: "Autonomous Systems"
   },
   {
     id: 6,
-    title: "Data Science Dashboard",
-    description: "Interactive dashboard for data visualization and machine learning model monitoring with real-time metrics and performance tracking.",
+    title: "Maze Game with AI Search Strategies",
+    description: "Interactive maze solving game implementing various AI search algorithms including A*, BFS, DFS, and heuristic-based pathfinding with visual demonstrations.",
     image: "https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Streamlit", "Plotly", "Pandas", "MLflow"],
-    githubUrl: "https://github.com/Youssef-Ai1001/ml-dashboard",
-    liveUrl: "https://dashboard.yousseftaha.com",
-    category: "Data Science"
+    technologies: ["Python", "AI Search Algorithms", "Game Development", "Pathfinding", "Visualization"],
+    githubUrl: "https://github.com/Youssef-Ai1001/Maze-Game-with-Ai-Search-strategies",
+    category: "AI Algorithms"
   }
 ];

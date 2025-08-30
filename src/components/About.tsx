@@ -31,20 +31,20 @@ const About: React.FC = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto lg:mx-0">
               <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">50+</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
               <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">5+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">3+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Years Learning</div>
               </div>
               <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">15+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Publications</div>
+                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">Multiple</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Certifications</div>
               </div>
               <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-green-600 dark:text-green-400">10+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Awards</div>
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">Active</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Open Source</div>
               </div>
             </div>
           </div>
@@ -56,19 +56,19 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
-                I'm Youssef, an AI Engineer with a deep passion for artificial intelligence and machine learning. 
+                I'm Youssef Taha Badawi, an AI Engineer with a deep passion for artificial intelligence and machine learning. 
                 My journey began with a fascination for how machines can learn and adapt, leading me to pursue 
-                advanced studies in computer science and specialize in AI technologies.
+                advanced studies in computer science and specialize in AI technologies with a focus on practical applications.
               </p>
               <p>
-                Over the past 5+ years, I've worked on cutting-edge projects spanning computer vision, natural 
-                language processing, and deep learning. I believe in the transformative power of AI to solve 
-                complex real-world problems and improve people's lives.
+                I have hands-on experience developing AI solutions across various domains including medical image analysis, 
+                autonomous driving systems, and data visualization. My work spans from research and development to 
+                practical implementation of machine learning models in real-world applications.
               </p>
               <p>
-                When I'm not coding or researching, you'll find me contributing to open-source projects, 
-                writing technical articles, or mentoring aspiring AI engineers. I'm always excited to 
-                collaborate on innovative projects that push the boundaries of what's possible with AI.
+                I'm passionate about bridging the gap between theoretical AI research and practical applications. 
+                My projects demonstrate proficiency in Python, deep learning frameworks, and modern development practices, 
+                always with a focus on creating solutions that make a meaningful impact.
               </p>
             </div>
 
