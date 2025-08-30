@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
           {/* Role */}
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
-            AI Engineer & Machine Learning Specialist
+            AI Engineer & Machine Learning Specialistvvvvv
           </h2>
 
           {/* Tagline */}
