@@ -110,12 +110,29 @@ const Resume: React.FC = () => {
               </h3>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
-                  <div key={index} className="border-l-4 border-blue-600 pl-4">
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200">
-                      {cert.name}
-                    </h4>
-                    <p className="text-blue-600 dark:text-blue-400">{cert.issuer}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{cert.date}</p>
+                  <div key={index} className="border-l-4 border-blue-600 pl-4 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-r-lg p-2 transition-colors duration-200">
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block group"
+                      >
+                        <h4 className="font-semibold text-gray-800 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                          {cert.name}
+                        </h4>
+                        <p className="text-blue-600 dark:text-blue-400">{cert.issuer}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">{cert.date}</p>
+                      </a>
+                    ) : (
+                      <>
+                        <h4 className="font-semibold text-gray-800 dark:text-gray-200">
+                          {cert.name}
+                        </h4>
+                        <p className="text-blue-600 dark:text-blue-400">{cert.issuer}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">{cert.date}</p>
+                      </>
+                    )}
                   </div>
                 ))}
               </div>
@@ -249,17 +266,32 @@ const certifications = [
   {
     name: "Machine Learning Specialization",
     issuer: "Coursera",
-    date: "2023"
+    date: "2023",
+    url: "https://www.coursera.org/specializations/machine-learning"
   },
   {
     name: "Deep Learning with Python",
     issuer: "Online Learning Platform",
-    date: "2022"
+    date: "2022",
+    url: "https://www.deeplearning.ai/"
   },
   {
     name: "Computer Vision Fundamentals",
     issuer: "Self-Study & Projects",
-    date: "2021"
+    date: "2021",
+    url: "https://opencv.org/"
+  },
+  {
+    name: "AWS Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2023",
+    url: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+  },
+  {
+    name: "Python for Data Science",
+    issuer: "IBM",
+    date: "2022",
+    url: "https://www.ibm.com/training/badge/python-for-data-science"
   }
 ];
 

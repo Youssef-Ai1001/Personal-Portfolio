@@ -4,7 +4,6 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
 import Blog from './components/Blog';
 import Publications from './components/Publications';
 import Resume from './components/Resume';
@@ -21,7 +20,6 @@ function App() {
         <Home />
         <About />
         <Portfolio />
-        <Skills />
         <Blog />
         <Publications />
         <Resume />

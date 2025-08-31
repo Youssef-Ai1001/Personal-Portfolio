@@ -78,86 +78,19 @@ const Publications: React.FC = () => {
             Publications & Research
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            My research contributions to the field of artificial intelligence, machine learning, 
-            and computer science, published in top-tier venues and conferences.
+            Research and project documentation will be added here as they become available.
           </p>
         </div>
 
-        {/* Research Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 text-center">
-            <BookOpen className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
-          </div>
-          <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-6 text-center">
-            <Award className="w-8 h-8 text-indigo-600 dark:text-indigo-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-              Active
-            </div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">GitHub Profile</div>
-          </div>
-          <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-6 text-center">
-            <Users className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">Multiple</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Platforms</div>
-          </div>
-          <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 text-center">
-            <Calendar className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-            <div className="text-2xl font-bold text-green-600 dark:text-green-400">2024</div>
-            <div className="text-sm text-gray-600 dark:text-gray-400">Latest Work</div>
-          </div>
-        </div>
-
-        {/* Type Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {types.map((type) => (
-            <button
-              key={type}
-              onClick={() => setSelectedType(type)}
-              className={`px-4 py-2 rounded-full font-medium transition-all duration-300 ${
-                selectedType === type
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-600'
-              }`}
-            >
-              {type}
-            </button>
-          ))}
-        </div>
-
-        {/* Publications List */}
-        <div className="space-y-8">
-          {filteredPublications.map((publication) => (
-            <PublicationCard key={publication.id} publication={publication} />
-          ))}
-        </div>
-
-        {/* Research Interests */}
-        <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-blue-900 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Current Research Interests
+        {/* Empty state for future publications */}
+        <div className="text-center py-16">
+          <BookOpen className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
+            Publications Coming Soon
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Efficient AI</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Developing lightweight models for edge computing and mobile applications
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Trustworthy AI</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Building interpretable and fair AI systems for critical applications
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Multi-Modal Learning</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Integrating vision, language, and other modalities for comprehensive AI
-              </p>
-            </div>
-          </div>
+          <p className="text-gray-500 dark:text-gray-500">
+            Research papers and publications will be featured here as they become available.
+          </p>
         </div>
       </div>
     </section>
