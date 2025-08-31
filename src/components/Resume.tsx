@@ -185,7 +185,7 @@ const EducationItem: React.FC<{ education: any }> = ({ education }) => {
 const skillCategories = [
   {
     name: "Programming",
-    skills: ["Python", "JavaScript", "TypeScript", "C++", "SQL"]
+    skills: ["Python", "SQL", "Java", "JavaScript (Basic)", "C++ (Basic)", "R (Basic)"]
   },
   {
     name: "AI/ML",
@@ -203,11 +203,11 @@ const skillCategories = [
 
 const experiences = [
   {
-    position: "AI Engineer & Researcher",
-    company: "Independent Projects",
+    position: "AI Engineering Student & Project Developer",
+    company: "Academic & Personal Projects",
     location: "Cairo, Egypt",
-    duration: "2023 - Present",
-    description: "Developing innovative AI solutions across multiple domains including medical image analysis, autonomous systems, and data visualization. Focus on practical applications of machine learning and deep learning technologies.",
+    duration: "2022 - Present",
+    description: "Developing AI and machine learning projects as part of academic studies and personal learning. Focus on computer vision, data analysis, and practical AI applications through hands-on implementation.",
     technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Gradio", "Dash"]
   },
   {

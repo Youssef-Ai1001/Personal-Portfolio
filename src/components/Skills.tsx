@@ -10,10 +10,10 @@ const Skills: React.FC = () => {
       icon: <Code className="w-6 h-6" />,
       skills: [
         { name: 'Python', level: 95, description: 'Primary language for AI/ML development' },
-        { name: 'JavaScript/TypeScript', level: 88, description: 'Full-stack web development' },
-        { name: 'C++', level: 82, description: 'High-performance computing and optimization' },
+        { name: 'JavaScript/TypeScript', level: 35, description: 'Basic web development knowledge' },
+        { name: 'C++', level: 25, description: 'Beginner level programming' },
         { name: 'SQL', level: 85, description: 'Database design and complex queries' },
-        { name: 'R', level: 75, description: 'Statistical analysis and data science' },
+        { name: 'R', level: 30, description: 'Basic statistical analysis' },
         { name: 'Java', level: 78, description: 'Enterprise applications and Android development' }
       ]
     },
