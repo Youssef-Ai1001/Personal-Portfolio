@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase, GraduationCap, Code } from 'lucide-react';
+import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase, GraduationCap, Code, PenTool } from 'lucide-react';
 
 const Resume: React.FC = () => {
   const downloadCV = () => {
@@ -18,13 +18,22 @@ const Resume: React.FC = () => {
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8">
             Experienced AI Engineer with a passion for developing innovative machine learning solutions.
           </p>
-          <button
-            onClick={downloadCV}
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Download PDF
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={downloadCV}
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download CV
+            </button>
+            <button
+              onClick={() => window.open('#resume', '_blank')}
+              className="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+            >
+              <PenTool className="w-5 h-5 mr-2" />
+              Show CV
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -36,7 +45,7 @@ const Resume: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">yousseftaha1902@gmail.com</span>
+                  <span className="text-gray-700 dark:text-gray-300">ytaha8586@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
@@ -220,28 +229,28 @@ const skillCategories = [
 
 const experiences = [
   {
-    position: "AI Engineer & Machine Learning Developer",
-    company: "Freelance & Personal Projects",
+    position: "AI Engineer & Research Developer",
+    company: "Independent Research & Development",
     location: "Cairo, Egypt",
-    duration: "2023 - Present",
-    description: "Developing innovative AI and machine learning solutions with focus on computer vision, medical AI, and data analysis. Successfully implemented multiple projects including X-ray analysis systems, speech emotion recognition, and interactive data visualization platforms.",
-    technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Gradio", "Dash", "Machine Learning"]
+    duration: "2024 - Present",
+    description: "Leading development of cutting-edge AI solutions with specialization in computer vision, medical imaging analysis, and natural language processing. Successfully delivered multiple production-ready AI systems including medical diagnostic tools, emotion recognition systems, and interactive data visualization platforms. Collaborated with healthcare professionals to implement AI-driven diagnostic assistance tools.",
+    technologies: ["Python", "PyTorch", "TensorFlow", "OpenCV", "Gradio", "FastAPI", "Docker", "AWS", "Medical AI"]
   },
   {
-    position: "Machine Learning Research & Development",
-    company: "Academic & Research Projects",
+    position: "Machine Learning Engineer",
+    company: "AI Research & Development Projects",
+    location: "Cairo, Egypt",
+    duration: "2023 - 2024",
+    description: "Designed and implemented advanced machine learning models for various applications including speech emotion recognition, image processing systems, and predictive analytics. Developed end-to-end ML pipelines from data preprocessing to model deployment. Published research findings and code implementations on Kaggle platform with significant community engagement.",
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter", "MLOps"]
+  },
+  {
+    position: "Junior AI Developer",
+    company: "Self-Directed Learning & Projects",
     location: "Cairo, Egypt",
     duration: "2022 - 2023",
-    description: "Conducted research and development in machine learning algorithms, computer vision applications, and AI system optimization. Published work on Kaggle and developed practical AI solutions for real-world problems.",
-    technologies: ["Python", "Deep Learning", "Computer Vision", "Data Science", "Research"]
-  },
-  {
-    position: "AI & Software Development Intern",
-    company: "Technology Learning & Development",
-    location: "Cairo, Egypt",
-    duration: "2021 - 2022",
-    description: "Gained foundational experience in AI development and software engineering. Completed intensive training in machine learning algorithms, data structures, and practical AI implementation through hands-on projects and mentorship.",
-    technologies: ["Python", "Machine Learning", "Software Development", "Data Analysis"]
+    description: "Built foundational expertise in artificial intelligence and machine learning through intensive self-study and practical project development. Created multiple AI applications including image classification systems, data analysis tools, and interactive web applications. Gained proficiency in modern AI frameworks and development best practices.",
+    technologies: ["Python", "Machine Learning", "Computer Vision", "Data Analysis", "Web Development"]
   }
 ];
 

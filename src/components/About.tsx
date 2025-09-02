@@ -21,7 +21,7 @@ const About: React.FC = () => {
           <div className="text-center lg:text-left">
             <div className="relative inline-block mb-8">
               <img
-                src="/photo_2025-07-03_11-51-27.jpg"
+                src="/Adobe Express - file.jpg"
                 alt="Youssef Taha Badawi"
                 className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl object-cover shadow-2xl"
               />

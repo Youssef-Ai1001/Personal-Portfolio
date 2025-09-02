@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Publications from './components/Publications';
+import Blog from './components/Blog';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Portfolio />
         <Publications />
+        <Blog />
         <Resume />
         <Contact />
       </main>
