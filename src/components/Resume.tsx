@@ -220,28 +220,28 @@ const skillCategories = [
 
 const experiences = [
   {
-    position: "AI Engineering Student & Project Developer",
-    company: "Academic & Personal Projects",
+    position: "AI Engineer & Machine Learning Developer",
+    company: "Freelance & Personal Projects",
     location: "Cairo, Egypt",
-    duration: "2022 - Present",
-    description: "Developing AI and machine learning projects as part of academic studies and personal learning. Focus on computer vision, data analysis, and practical AI applications through hands-on implementation.",
-    technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Gradio", "Dash"]
+    duration: "2023 - Present",
+    description: "Developing innovative AI and machine learning solutions with focus on computer vision, medical AI, and data analysis. Successfully implemented multiple projects including X-ray analysis systems, speech emotion recognition, and interactive data visualization platforms.",
+    technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Gradio", "Dash", "Machine Learning"]
   },
   {
-    position: "Computer Science Student & AI Enthusiast",
-    company: "Academic Projects",
+    position: "Machine Learning Research & Development",
+    company: "Academic & Research Projects",
     location: "Cairo, Egypt",
-    duration: "2020 - 2023",
-    description: "Completed comprehensive projects in computer vision, machine learning, and AI algorithms. Developed expertise in image processing, neural networks, and data analysis through hands-on implementation.",
-    technologies: ["Python", "Machine Learning", "Computer Vision", "Data Analysis", "Algorithm Design"]
+    duration: "2022 - 2023",
+    description: "Conducted research and development in machine learning algorithms, computer vision applications, and AI system optimization. Published work on Kaggle and developed practical AI solutions for real-world problems.",
+    technologies: ["Python", "Deep Learning", "Computer Vision", "Data Science", "Research"]
   },
   {
-    position: "Software Development & AI Learning",
-    company: "Self-Directed Learning",
+    position: "AI & Software Development Intern",
+    company: "Technology Learning & Development",
     location: "Cairo, Egypt",
-    duration: "2019 - 2020",
-    description: "Intensive self-study in artificial intelligence, machine learning, and software development. Built foundational knowledge in programming, algorithms, and AI concepts through online courses and practical projects.",
-    technologies: ["Python", "Machine Learning Fundamentals", "Programming", "Algorithm Design"]
+    duration: "2021 - 2022",
+    description: "Gained foundational experience in AI development and software engineering. Completed intensive training in machine learning algorithms, data structures, and practical AI implementation through hands-on projects and mentorship.",
+    technologies: ["Python", "Machine Learning", "Software Development", "Data Analysis"]
   }
 ];
 

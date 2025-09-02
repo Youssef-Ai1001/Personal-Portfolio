@@ -78,15 +78,15 @@ const Publications: React.FC = () => {
             Publications & Research
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Research and project documentation will be added here as they become available.
+            Research papers and publications will be featured here as they become available.
           </p>
         </div>
 
-        {/* Empty state for future publications */}
+        {/* Coming Soon state */}
         <div className="text-center py-16">
           <BookOpen className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
-            Publications Coming Soon
+            Coming Soon
           </h3>
           <p className="text-gray-500 dark:text-gray-500">
             Research papers and publications will be featured here as they become available.

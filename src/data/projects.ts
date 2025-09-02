@@ -48,15 +48,6 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Autonomous Car Simulation",
-    description: "Advanced simulation environment for autonomous vehicle development, featuring realistic physics, sensor modeling, and AI-driven navigation algorithms.",
-    image: "https://images.pexels.com/photos/8386761/pexels-photo-8386761.jpeg?auto=compress&cs=tinysrgb&w=800",
-    technologies: ["Python", "Simulation", "Autonomous Systems", "AI Navigation", "Physics Modeling"],
-    liveUrl: "https://drive.google.com/file/d/1psnSKR-Z3EGGfC1BRDkLh7bfLZuurYRA/view?usp=drive_link&usp=embed_facebook",
-    category: "Autonomous Systems"
-  },
-  {
-    id: 6,
     title: "Maze Game with AI Search Strategies",
     description: "Interactive maze solving game implementing various AI search algorithms including A*, BFS, DFS, and heuristic-based pathfinding with visual demonstrations.",
     image: "https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=800",

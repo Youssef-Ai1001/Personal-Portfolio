@@ -20,9 +20,11 @@ const About: React.FC = () => {
           {/* Profile Image and Stats */}
           <div className="text-center lg:text-left">
             <div className="relative inline-block mb-8">
-              <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-600 flex items-center justify-center shadow-2xl">
-                <span className="text-6xl font-bold text-white">Y</span>
-              </div>
+              <img
+                src="/photo_2025-07-03_11-51-27.jpg"
+                alt="Youssef Taha Badawi"
+                className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl object-cover shadow-2xl"
+              />
               <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                 <Brain className="w-10 h-10 text-white" />
               </div>
