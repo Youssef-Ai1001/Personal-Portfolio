@@ -1,12 +1,7 @@
 import React from 'react';
-import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase, GraduationCap, Code, PenTool } from 'lucide-react';
+import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase, GraduationCap, Code, ExternalLink } from 'lucide-react';
 
 const Resume: React.FC = () => {
-  const downloadCV = () => {
-    // In a real application, this would trigger a download of the actual PDF
-    alert('CV download would start here. Please add your actual CV file to the public folder and link it here.');
-  };
-
   return (
     <section id="resume" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,17 +15,17 @@ const Resume: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={downloadCV}
+              onClick={() => window.open('https://drive.google.com/uc?export=download&id=1BhmSlbU3HwW8dN2Qx7UAGGbhR5gonixD', '_blank')}
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
             >
               <Download className="w-5 h-5 mr-2" />
               Download CV
             </button>
             <button
-              onClick={() => window.open('#resume', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1BhmSlbU3HwW8dN2Qx7UAGGbhR5gonixD/view?usp=sharing', '_blank')}
               className="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
             >
-              <PenTool className="w-5 h-5 mr-2" />
+              <ExternalLink className="w-5 h-5 mr-2" />
               Show CV
             </button>
           </div>

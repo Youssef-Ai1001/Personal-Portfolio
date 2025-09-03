@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Calendar, Clock, Bell, Mail, FileText, Award } from 'lucide-react';
+import { BookOpen, Calendar, Bell, Mail, FileText, Award, ExternalLink } from 'lucide-react';
 
 const Publications: React.FC = () => {
   const [email, setEmail] = useState('');

@@ -21,6 +21,7 @@ function App() {
         <About />
         <Portfolio />
         <Publications />
+        <Publications />
         <Blog />
         <Blog />
         <Resume />
