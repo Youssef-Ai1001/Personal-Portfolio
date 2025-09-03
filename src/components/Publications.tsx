@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Calendar, Clock, Bell, Mail } from 'lucide-react';
+import { BookOpen, Calendar, Clock, Bell, Mail, FileText, Award } from 'lucide-react';
 
 const Publications: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -21,10 +21,10 @@ const Publications: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Blog & Insights
+            Publications & Research
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Sharing knowledge, insights, and experiences in AI, machine learning, and technology.
+            Academic publications, research papers, and contributions to the AI and machine learning community.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const Publications: React.FC = () => {
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-blue-900 rounded-2xl p-12 text-center">
             {/* Icon */}
             <div className="w-24 h-24 mx-auto mb-8 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-              <BookOpen className="w-12 h-12 text-white" />
+              <FileText className="w-12 h-12 text-white" />
             </div>
 
             {/* Coming Soon Message */}
@@ -41,39 +41,39 @@ const Publications: React.FC = () => {
               Coming Soon
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-              I'm working on creating valuable content about AI, machine learning, and my journey in technology. 
-              This section will feature in-depth articles, tutorials, and insights from my projects and research.
+              I'm currently working on publishing research papers and academic contributions in the field of 
+              artificial intelligence and machine learning. This section will showcase my research work and publications.
             </p>
 
             {/* What to Expect */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  <BookOpen className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <FileText className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Technical Articles</h4>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Research Papers</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Deep dives into AI algorithms, implementation guides, and best practices
+                  Academic papers on AI, machine learning, and computer vision applications
                 </p>
               </div>
               
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
                 <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  <Calendar className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+                  <Award className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Project Insights</h4>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Conference Presentations</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Behind-the-scenes stories and lessons learned from my AI projects
+                  Presentations and talks at AI conferences and academic events
                 </p>
               </div>
               
               <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
                 <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  <Clock className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                  <BookOpen className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Industry Trends</h4>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Open Source Contributions</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Analysis of emerging AI technologies and their real-world applications
+                  Contributions to open source AI projects and research repositories
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Publications: React.FC = () => {
               </div>
               <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">Q2 2025</p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                First articles will be published soon
+                First publications will be available soon
               </p>
             </div>
 
@@ -99,7 +99,7 @@ const Publications: React.FC = () => {
                 </h4>
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Be the first to know when new articles are published. No spam, just quality content.
+                Be the first to know when new publications are available. No spam, just quality research updates.
               </p>
               
               {isSubscribed ? (

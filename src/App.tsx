@@ -22,6 +22,7 @@ function App() {
         <Portfolio />
         <Publications />
         <Blog />
+        <Blog />
         <Resume />
         <Contact />
       </main>
