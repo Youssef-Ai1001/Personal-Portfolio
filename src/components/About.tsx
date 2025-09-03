@@ -33,7 +33,7 @@ const About: React.FC = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto lg:mx-0">
               <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">6+</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">5</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
               <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4 text-center">

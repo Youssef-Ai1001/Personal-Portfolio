@@ -49,7 +49,10 @@ const Resume: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">+20 1025 555 555</span>
+                  <div className="text-gray-700 dark:text-gray-300">
+                    <div>01554019655</div>
+                    <div>01066965772</div>
+                  </div>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />

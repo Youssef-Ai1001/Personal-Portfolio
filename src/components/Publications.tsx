@@ -1,208 +1,140 @@
 import React, { useState } from 'react';
-import { BookOpen, ExternalLink, Download, Calendar, Users, Award } from 'lucide-react';
-
-interface Publication {
-  id: number;
-  title: string;
-  authors: string[];
-  venue: string;
-  year: number;
-  type: 'Conference' | 'Journal' | 'Workshop' | 'Preprint';
-  abstract: string;
-  keywords: string[];
-  pdfUrl?: string;
-  externalUrl?: string;
-  citations: number;
-  status: 'Published' | 'Accepted' | 'Under Review' | 'Preprint';
-}
+import { BookOpen, Calendar, Clock, Bell, Mail } from 'lucide-react';
 
 const Publications: React.FC = () => {
-  const [selectedType, setSelectedType] = useState('All');
-  
-  const publications: Publication[] = [
-    {
-      id: 1,
-      title: "Efficient Neural Architecture Search for Computer Vision Tasks",
-      authors: ["Youssef Taha", "Dr. Sarah Johnson", "Prof. Michael Chen"],
-      venue: "International Conference on Machine Learning (ICML)",
-      year: 2024,
-      type: 'Conference',
-      abstract: "We propose a novel neural architecture search method that reduces computational cost by 70% while maintaining state-of-the-art performance on ImageNet classification tasks. Our approach leverages progressive search strategies and efficient performance estimation.",
-      keywords: ["Neural Architecture Search", "Computer Vision", "Deep Learning", "Optimization"],
-      pdfUrl: "#",
-      externalUrl: "https://arxiv.org/abs/2024.example",
-      citations: 23,
-      status: 'Published'
-    },
-    {
-      id: 2,
-      title: "Federated Learning for Privacy-Preserving Medical Image Analysis",
-      authors: ["Youssef Taha", "Dr. Emily Rodriguez", "Dr. James Wilson"],
-      venue: "Nature Machine Intelligence",
-      year: 2024,
-      type: 'Journal',
-      abstract: "This work presents a federated learning framework for medical image analysis that preserves patient privacy while achieving comparable performance to centralized approaches. We demonstrate effectiveness on chest X-ray and MRI datasets.",
-      keywords: ["Federated Learning", "Medical AI", "Privacy", "Healthcare"],
-      pdfUrl: "#",
-      externalUrl: "https://nature.com/articles/example",
-      citations: 45,
-      status: 'Published'
-    },
-    {
-      id: 3,
-      title: "Transformer-Based Multi-Modal Learning for Autonomous Driving",
-      authors: ["Youssef Taha", "Dr. Alex Kumar", "Prof. Lisa Zhang"],
-      venue: "Conference on Computer Vision and Pattern Recognition (CVPR)",
-      year: 2023,
-      type: 'Conference',
-      abstract: "We introduce a transformer architecture that effectively fuses visual, LiDAR, and textual information for autonomous driving tasks. Our model achieves new state-of-the-art results on the nuScenes dataset.",
-      keywords: ["Autonomous Driving", "Multi-Modal Learning", "Transformers", "Computer Vision"],
-      pdfUrl: "#",
-      externalUrl: "https://openaccess.thecvf.com/example",
-      citations: 67,
-      status: 'Published'
-    },
-  ];
+  const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
-  const types = ['All', ...Array.from(new Set(publications.map(p => p.type)))];
-  const filteredPublications = selectedType === 'All' 
-    ? publications 
-    : publications.filter(pub => pub.type === selectedType);
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      setIsSubscribed(true);
+      setEmail('');
+      // In a real application, you would send this to your backend
+      setTimeout(() => setIsSubscribed(false), 3000);
+    }
+  };
 
   return (
-    <section id="publications" className="py-20 bg-white dark:bg-gray-900">
+    <section id="publications" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Publications & Research
+            Blog & Insights
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Research papers and publications will be featured here as they become available.
+            Sharing knowledge, insights, and experiences in AI, machine learning, and technology.
           </p>
         </div>
 
-        {/* Coming Soon state */}
-        <div className="text-center py-16">
-          <BookOpen className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
-            Coming Soon
-          </h3>
-          <p className="text-gray-500 dark:text-gray-500">
-            Research papers and publications will be featured here as they become available.
-          </p>
+        {/* Coming Soon Content */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-blue-900 rounded-2xl p-12 text-center">
+            {/* Icon */}
+            <div className="w-24 h-24 mx-auto mb-8 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+              <BookOpen className="w-12 h-12 text-white" />
+            </div>
+
+            {/* Coming Soon Message */}
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Coming Soon
+            </h3>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+              I'm working on creating valuable content about AI, machine learning, and my journey in technology. 
+              This section will feature in-depth articles, tutorials, and insights from my projects and research.
+            </p>
+
+            {/* What to Expect */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
+                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <BookOpen className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Technical Articles</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Deep dives into AI algorithms, implementation guides, and best practices
+                </p>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <Calendar className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Project Insights</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Behind-the-scenes stories and lessons learned from my AI projects
+                </p>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-md">
+                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  <Clock className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                </div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Industry Trends</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Analysis of emerging AI technologies and their real-world applications
+                </p>
+              </div>
+            </div>
+
+            {/* Timeline */}
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-6 mb-8 max-w-md mx-auto">
+              <div className="flex items-center justify-center mb-3">
+                <Calendar className="w-5 h-5 text-blue-600 mr-2" />
+                <span className="font-semibold text-gray-900 dark:text-white">Expected Launch</span>
+              </div>
+              <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">Q2 2025</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                First articles will be published soon
+              </p>
+            </div>
+
+            {/* Email Subscription */}
+            <div className="bg-white dark:bg-gray-700 rounded-lg p-8 max-w-lg mx-auto">
+              <div className="flex items-center justify-center mb-4">
+                <Bell className="w-6 h-6 text-blue-600 mr-2" />
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  Get Notified
+                </h4>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Be the first to know when new articles are published. No spam, just quality content.
+              </p>
+              
+              {isSubscribed ? (
+                <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
+                  <div className="flex items-center justify-center text-green-600 dark:text-green-400">
+                    <Bell className="w-5 h-5 mr-2" />
+                    <span className="font-medium">Thanks for subscribing!</span>
+                  </div>
+                </div>
+              ) : (
+                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+                  <div className="flex-1">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email address"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
+                  >
+                    <Mail className="w-5 h-5 mr-2" />
+                    Notify Me
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  );
-};
-
-const PublicationCard: React.FC<{ publication: Publication }> = ({ publication }) => {
-  const [showAbstract, setShowAbstract] = useState(false);
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Published': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
-      case 'Accepted': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
-      case 'Under Review': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
-      case 'Preprint': return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
-      default: return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
-    }
-  };
-
-  const getTypeColor = (type: string) => {
-    switch (type) {
-      case 'Conference': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
-      case 'Journal': return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200';
-      case 'Workshop': return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
-      case 'Preprint': return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
-      default: return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
-    }
-  };
-
-  return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6">
-      {/* Header */}
-      <div className="flex flex-wrap items-start justify-between mb-4">
-        <div className="flex-1 min-w-0 mr-4">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
-            {publication.title}
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-2">
-            {publication.authors.join(', ')}
-          </p>
-          <p className="text-blue-600 dark:text-blue-400 font-medium">
-            {publication.venue} ({publication.year})
-          </p>
-        </div>
-        <div className="flex flex-col items-end space-y-2">
-          <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(publication.status)}`}>
-            {publication.status}
-          </span>
-          <span className={`px-3 py-1 rounded-full text-xs font-medium ${getTypeColor(publication.type)}`}>
-            {publication.type}
-          </span>
-        </div>
-      </div>
-
-      {/* Keywords */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {publication.keywords.map((keyword) => (
-          <span
-            key={keyword}
-            className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded"
-          >
-            {keyword}
-          </span>
-        ))}
-      </div>
-
-      {/* Abstract Toggle */}
-      <button
-        onClick={() => setShowAbstract(!showAbstract)}
-        className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium mb-4"
-      >
-        {showAbstract ? 'Hide Abstract' : 'Show Abstract'}
-      </button>
-
-      {/* Abstract */}
-      {showAbstract && (
-        <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
-          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-            {publication.abstract}
-          </p>
-        </div>
-      )}
-
-      {/* Footer */}
-      <div className="flex items-center justify-between">
-        <div className="text-sm text-gray-500 dark:text-gray-400">
-          Citations: {publication.citations}
-        </div>
-        <div className="flex space-x-3">
-          {publication.pdfUrl && (
-            <a
-              href={publication.pdfUrl}
-              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-            >
-              <Download className="w-4 h-4 mr-1" />
-              PDF
-            </a>
-          )}
-          {publication.externalUrl && (
-            <a
-              href={publication.externalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-            >
-              <ExternalLink className="w-4 h-4 mr-1" />
-              View
-            </a>
-          )}
-        </div>
-      </div>
-    </div>
   );
 };
 
