@@ -66,10 +66,6 @@ const Contact: React.FC = () => {
                       <p>01554019655</p>
                       <p>01066965772</p>
                     </div>
-                      <p>01554019655</p>
-                      <p>01066965772</p>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="flex items-center">
