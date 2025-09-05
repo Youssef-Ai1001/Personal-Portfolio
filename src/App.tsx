@@ -20,9 +20,6 @@ function App() {
         <Home />
         <About />
         <Portfolio />
-        <Publications />
-        <Publications />
-        <Blog />
         <Blog />
         <Resume />
         <Contact />
