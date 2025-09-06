@@ -3,7 +3,7 @@ import { PenTool } from 'lucide-react';
 
 const Blog: React.FC = () => {
   return (
-    <section id="blog" className="py-20 bg-white dark:bg-gray-900 scroll-animate">
+    <section id="blog" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useDarkMode } from './hooks/useDarkMode';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
@@ -12,28 +11,6 @@ import Contact from './components/Contact';
 
 function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
-
-  // Scroll animation effect
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all sections with scroll-animate class
-    const animatedElements = document.querySelectorAll('.scroll-animate');
-    animatedElements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div className={`min-h-screen ${isDark ? 'dark' : ''}`}>
