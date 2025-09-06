@@ -3,7 +3,7 @@ import { Brain, Code, Database, Zap, Award, Users, Target, Heart } from 'lucide-
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 scroll-animate">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -22,7 +22,7 @@ const About: React.FC = () => {
             <div className="relative inline-block mb-8">
               <img
                 src="/Adobe Express - file.jpg"
-                alt="Youssef Taha Badawi"
+                alt="Youssef Taha B."
                 className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl object-cover shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
@@ -58,7 +58,7 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
-                I'm Youssef Taha Badawi, an AI Engineer with a deep passion for artificial intelligence and machine learning. 
+                I'm Youssef Taha B., an AI Engineer with a deep passion for artificial intelligence and machine learning. 
                 My journey began with a fascination for how machines can learn and adapt, leading me to pursue 
                 advanced studies in computer science and specialize in AI technologies with a focus on practical applications.
               </p>

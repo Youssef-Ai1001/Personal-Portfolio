@@ -3,7 +3,7 @@ import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase, GraduationCa
 
 const Resume: React.FC = () => {
   return (
-    <section id="resume" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="resume" className="py-20 bg-gray-50 dark:bg-gray-800 scroll-animate">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -40,18 +40,15 @@ const Resume: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">ytaha8586@gmail.com</span>
+                  <span className="text-gray-700 dark:text-gray-300">Available upon request</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <div className="text-gray-700 dark:text-gray-300">
-                    <div>01554019655</div>
-                    <div>01066965772</div>
-                  </div>
+                  <span className="text-gray-700 dark:text-gray-300">Available upon request</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <span className="text-gray-700 dark:text-gray-300">Cairo, Egypt</span>
+                  <span className="text-gray-700 dark:text-gray-300">Available upon request</span>
                 </div>
               </div>
             </div>

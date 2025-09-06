@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useDarkMode } from './hooks/useDarkMode';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
@@ -11,6 +12,28 @@ import Contact from './components/Contact';
 
 function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
+
+  // Scroll animation effect
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections with scroll-animate class
+    const animatedElements = document.querySelectorAll('.scroll-animate');
+    animatedElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className={`min-h-screen ${isDark ? 'dark' : ''}`}>
@@ -31,14 +54,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-6">
-              <span className="text-2xl font-bold text-blue-400">Youssef</span>
+              <span className="text-2xl font-bold text-blue-400">Youssef Taha B.</span>
             </div>
             <p className="text-gray-400 mb-6">
               AI Engineer passionate about developing practical AI solutions for real-world challenges.
             </p>
             <div className="border-t border-gray-700 pt-6">
               <p className="text-sm text-gray-500">
-                © 2024 Youssef. All rights reserved. Built with React and Tailwind CSS.
+                © 2024 Youssef Taha B. All rights reserved. Built with React and Tailwind CSS.
               </p>
             </div>
           </div>

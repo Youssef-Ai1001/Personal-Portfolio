@@ -13,7 +13,7 @@ const Navigation: React.FC<NavigationProps> = ({ isDark, toggleDarkMode }) => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Publications', href: '#publications' },
+    { name: 'Publications & Research', href: '#publications' },
     { name: 'Blog & Insights', href: '#blog' },
     { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' }
@@ -33,7 +33,7 @@ const Navigation: React.FC<NavigationProps> = ({ isDark, toggleDarkMode }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">Youssef</span>
+            <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">Youssef Taha B.</span>
           </div>
 
           {/* Desktop Navigation */}

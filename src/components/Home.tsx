@@ -16,7 +16,7 @@ const Home: React.FC = () => {
           {/* Profile Image */}
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-xl">
-              <span className="text-4xl font-bold text-white">Y</span>
+              <span className="text-2xl font-bold text-white">YTB</span>
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             Hi, I'm{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-              Youssef
+              Youssef Taha B.
             </span>
           </h1>
 
