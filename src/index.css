@@ -15,3 +15,22 @@ html {
 .hover-lift:hover {
   transform: translateY(-5px);
 }
+
+/* Arabic font support */
+.font-arabic {
+  font-family: 'Cairo', 'Amiri', 'Noto Sans Arabic', sans-serif;
+}
+
+/* RTL support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
+}
+
+/* Ensure proper spacing in RTL */
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
